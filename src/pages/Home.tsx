@@ -102,7 +102,7 @@ const Home: React.FC = () => {
                 <span style={{ fontSize: "1.3em", fontWeight: "600" }}>
                   Hi, I'm Varnica,
                 </span>{" "}
-                I started my journey writing backend code at Infosys, but quickly found myself steering timelines, gathering requirements, and syncing cross-functional teams. That curiosity led me beyond the "how\" into the \"why", and I haven't looked back since.
+                I started my journey writing backend code at Infosys, but quickly found myself steering timelines, gathering requirements, and syncing cross-functional teams. That curiosity led me beyond the "how" into the "why", and I haven't looked back since.
                 <br />
 
                 <div style={{ marginTop: '0.3em', marginBottom: '0.3em' }}></div>
