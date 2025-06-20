@@ -26,16 +26,16 @@ export interface ProjectType {
 export const projects: ProjectType[] = [
   {
     id: 'wella-ecommerce-platform',
-    title: 'Wella Professionals – E-commerce Promotions Platform',
-    shortDescription: 'Led the digital transformation for Wella Professionals by defining system architecture and integrating Talon.One to automate personalized promotions, campaigns, and coupons across their e-commerce platform.',
-    description: 'Spearheaded the digital transformation initiative for Wella Professionals, a leading beauty brand, by architecting and implementing a comprehensive e-commerce promotions platform. This project involved deep integration with Talon.One\'s promotion engine to deliver personalized marketing campaigns, dynamic pricing strategies, and automated coupon distribution across multiple touchpoints.',
+    title: 'Powering Personalized Campaigns for Wella with Talon.One',
+    shortDescription: 'Currently leading the digital transformation for Wella Professionals by defining functional and technical requirements, and integrating Talon.One to automate personalized promotions, campaigns, and loyalty programs across their e-commerce platform.',
+    description: 'This ongoing project is part of Wella Professionals’ shift toward scalable e-commerce automation. As the Technical Product Lead, I’m responsible for defining functional, technical, and system requirements, and working closely with cross-functional teams to integrate Talon.One for promotions management. The objective is to move away from manual campaign processes and build an automated, data-driven setup for handling promotions, coupons, and loyalty workflows—all aligned with Wella’s brand strategy and customer engagement goals.',
     coverImage: WellaImage,
-    tags: ['E-commerce', 'Digital Transformation', 'System Architecture', 'Marketing Automation', 'API Integration', 'Personalization'],
-    role: 'Technical Product Lead',
-    tools: ['Talon.One', 'REST APIs', 'Microservices', 'AWS', 'Java', 'SpringBoot', 'SQL', 'Redis', 'Kafka', 'Docker', 'Jenkins'],
-    challenges: 'The main challenge was integrating complex promotion logic with existing e-commerce infrastructure while ensuring real-time personalization at scale. Wella needed to move from manual campaign management to automated, data-driven promotions that could adapt to customer behavior and market conditions dynamically.',
-    solutions: 'Designed a robust microservices architecture that seamlessly integrated Talon.One\'s promotion engine with Wella\'s existing systems. Implemented real-time data pipelines to enable personalized promotions based on customer segments, purchase history, and behavioral patterns. Created automated workflows for campaign deployment and performance tracking.',
-    impact: 'Successfully transformed Wella\'s promotional capabilities, resulting in 40% increase in campaign efficiency and 25% improvement in customer engagement rates. The platform now processes thousands of personalized promotions daily, significantly reducing manual effort while improving targeting accuracy.',
+    tags: ['E-commerce', 'Digital Transformation', 'Marketing Automation', 'API Integration', 'Personalization', 'Campaign Management'],
+    role: 'Systems Consultant and Developer',
+    tools: ['Talon.One', 'Jira', 'Confluence', 'Postman', 'MS Excel'],
+    challenges: 'The main challenge is aligning Talon.One’s flexible campaign engine with Wella’s business use cases while maintaining simplicity for end users. The system needs to support global campaign structures, segment-based targeting, and real-time personalization without disrupting existing workflows.',
+    solutions: 'Defined and documented detailed campaign flows and use cases across various promotional types. Coordinated with engineering and business teams to validate functional requirements and created sample campaigns for scenarios like first-time user offers, loyalty rewards, and seasonal events. Utilized Postman to test Talon.One APIs.',
+    impact: 'The project is currently in development and not yet live. However, foundational setup is complete, and the solution is expected to streamline campaign execution, reduce manual effort, and enable smarter, personalized promotions once launched.',
     images: []
   },
   {
