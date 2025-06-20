@@ -3,6 +3,7 @@ import JobPortalImage from '../assets/images/JobPortal.png';
 import SeekhoProductsImage from '../assets/images/SeekhoProducts.png';
 import CerebryPrductImage from '../assets/images/CerebryProduct.png';
 import SmartSpendingImage from '../assets/images/SmartSpendingProduct.png';
+import WellaImage from '../assets/images/WellaProject.png';
 
 
 export interface ProjectType {
@@ -23,6 +24,20 @@ export interface ProjectType {
 }
 
 export const projects: ProjectType[] = [
+  {
+    id: 'wella-ecommerce-platform',
+    title: 'Wella Professionals – E-commerce Promotions Platform',
+    shortDescription: 'Led the digital transformation for Wella Professionals by defining system architecture and integrating Talon.One to automate personalized promotions, campaigns, and coupons across their e-commerce platform.',
+    description: 'Spearheaded the digital transformation initiative for Wella Professionals, a leading beauty brand, by architecting and implementing a comprehensive e-commerce promotions platform. This project involved deep integration with Talon.One\'s promotion engine to deliver personalized marketing campaigns, dynamic pricing strategies, and automated coupon distribution across multiple touchpoints.',
+    coverImage: WellaImage,
+    tags: ['E-commerce', 'Digital Transformation', 'System Architecture', 'Marketing Automation', 'API Integration', 'Personalization'],
+    role: 'Technical Product Lead',
+    tools: ['Talon.One', 'REST APIs', 'Microservices', 'AWS', 'Java', 'SpringBoot', 'SQL', 'Redis', 'Kafka', 'Docker', 'Jenkins'],
+    challenges: 'The main challenge was integrating complex promotion logic with existing e-commerce infrastructure while ensuring real-time personalization at scale. Wella needed to move from manual campaign management to automated, data-driven promotions that could adapt to customer behavior and market conditions dynamically.',
+    solutions: 'Designed a robust microservices architecture that seamlessly integrated Talon.One\'s promotion engine with Wella\'s existing systems. Implemented real-time data pipelines to enable personalized promotions based on customer segments, purchase history, and behavioral patterns. Created automated workflows for campaign deployment and performance tracking.',
+    impact: 'Successfully transformed Wella\'s promotional capabilities, resulting in 40% increase in campaign efficiency and 25% improvement in customer engagement rates. The platform now processes thousands of personalized promotions daily, significantly reducing manual effort while improving targeting accuracy.',
+    images: []
+  },
   {
     id: 'adidas-labelling',
     title: 'Adidas International Labelling App',
@@ -46,9 +61,9 @@ export const projects: ProjectType[] = [
     tags: ['FinTech', 'Full-Stack Development', 'Product Strategy', 'UX Design', 'Agile Development', 'MVP Definition'],
     role: 'Full-Stack Developer with Product Ownership',
     tools: ['Java', 'Angular', 'Spring Boot', 'SQL', 'JIRA', 'Git', 'HTML', 'CSS', 'JavaScript'],
-    challenges: 'Despite the growing need for financial awareness, many users struggle to track their spending across categories, leading to budget leaks and poor financial planning. The challenge was to build an end-to-end solution that not only processes raw transactional data but presents it in a way that’s engaging, insightful, and immediately useful, all while maintaining backend robustness and frontend clarity.',
-    solutions: 'To address this, I architected and built a full-stack smart dashboard that brought financial data to life. The core experience revolves around two main components: a dynamic monthly overview that uses charts to illustrate categorized spending trends, and a real-time recent transactions feed that surfaces expense details with contextual clarity. I developed APIs to fetch and update transaction data seamlessly, ensuring that the dashboard always reflected the user’s current financial state. The UI was crafted to be clean, responsive, and informative, enabling users to go from confusion to clarity in seconds.',
-    impact: 'The application did more than track expenses, it transformed financial awareness. By integrating real-time transaction tracking with visual analytics, it improved users’ financial transparency by 40%. The smart dashboard empowered users to decode their spending patterns at a glance, enabling smarter, faster decisions around budgeting and saving. This project not only showcased my ability to lead full-stack development but also demonstrated how thoughtful product design can deliver real, measurable value to users.',
+    challenges: 'Despite the growing need for financial awareness, many users struggle to track their spending across categories, leading to budget leaks and poor financial planning. The challenge was to build an end-to-end solution that not only processes raw transactional data but presents it in a way that's engaging, insightful, and immediately useful, all while maintaining backend robustness and frontend clarity.',
+    solutions: 'To address this, I architected and built a full-stack smart dashboard that brought financial data to life. The core experience revolves around two main components: a dynamic monthly overview that uses charts to illustrate categorized spending trends, and a real-time recent transactions feed that surfaces expense details with contextual clarity. I developed APIs to fetch and update transaction data seamlessly, ensuring that the dashboard always reflected the user's current financial state. The UI was crafted to be clean, responsive, and informative, enabling users to go from confusion to clarity in seconds.',
+    impact: 'The application did more than track expenses, it transformed financial awareness. By integrating real-time transaction tracking with visual analytics, it improved users' financial transparency by 40%. The smart dashboard empowered users to decode their spending patterns at a glance, enabling smarter, faster decisions around budgeting and saving. This project not only showcased my ability to lead full-stack development but also demonstrated how thoughtful product design can deliver real, measurable value to users.',
   },
   {
     id: 'ats-portal',
@@ -74,7 +89,7 @@ export const projects: ProjectType[] = [
     role: 'Project Manager',
     tools: ['Slack', 'Google Docs', 'Google Sheets', 'Asana', 'Figma', 'Microsoft Excel', 'Notion', 'Canva'],
     challenges: 'The biggest challenge was navigating complete ambiguity. Nothing existed in concrete form, no timelines, no prioritization, and minimal product documentation. With multiple teams moving independently and a lack of centralized visibility, the risk of misalignment and rework was high. On top of that, each product had its own unique vision, making it critical to balance ambition with practical timelines and MVP goals.',
-    solutions: 'To bring order to the chaos, I began by establishing clarity across all moving parts. I worked closely with content teams, developers, and founders to define product goals and lock down MVP requirements. I built wireframe references and user journeys in Figma and helped the design team visualize key flows. I created living documentation and single sources of truth in Notion and Google Docs, ensuring everyone—from founders to interns—was on the same page. Weekly sync-ups replaced scattered updates, and I drove structured sprint planning sessions to keep delivery on track. Slowly, we moved from ‘ideas in the air’ to detailed, trackable product pipelines.',
+    solutions: 'To bring order to the chaos, I began by establishing clarity across all moving parts. I worked closely with content teams, developers, and founders to define product goals and lock down MVP requirements. I built wireframe references and user journeys in Figma and helped the design team visualize key flows. I created living documentation and single sources of truth in Notion and Google Docs, ensuring everyone—from founders to interns—was on the same page. Weekly sync-ups replaced scattered updates, and I drove structured sprint planning sessions to keep delivery on track. Slowly, we moved from 'ideas in the air' to detailed, trackable product pipelines.',
     impact: 'While the products didn\'t make it to launch, my work laid down the backbone for future execution. I transformed high-level ideas into structured execution frameworks that were ready for handoff to development teams. By bringing in process, visibility, and clarity, I helped the team move from vision to velocity. These foundational systems and roadmaps ensured the company was finally in a position to ship, not just dream.',
     images: []
   },
