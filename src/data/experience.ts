@@ -29,7 +29,7 @@ export const experiences: ExperienceType[] = [
     company: 'Infosys Limited',
     companyLogo: infosysLogo,
     role: 'Senior Systems Engineer',
-    period: '2022 - 2024',
+    //period: '2022 - 2024',
     description: 'Developed and maintained enterprise-level backend systems using Java, SpringBoot, and SQL. Collaborated with cross-functional teams to ensure timely delivery of features, focusing on quality and scalability.',
     skills: ['Java', 'SpringBoot', 'SQL', 'AWS', 'Agile', 'Cross-functional Collaboration', 'Feature Prioritization & Roadmapping']
   },
