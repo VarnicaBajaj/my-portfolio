@@ -209,7 +209,12 @@ const Home: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {projects.slice(0, 2).map((project, index) => (
-              <ProjectCard key={project.id} project={project} index={index} />
+              <ProjectCard 
+                key={project.id} 
+                project={project} 
+                index={index}
+                onClick={() => {}} 
+              />
             ))}
           </div>
           
