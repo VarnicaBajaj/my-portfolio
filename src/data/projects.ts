@@ -17,11 +17,9 @@ export interface ProjectType {
   title: string;
   shortDescription: string;
   description: string;
-  outcomeStatement: string;
   coverImage: string;
   images: string[];
   tags: string[];
-  industry: string;
   role: string;
   duration?: string;
   tools: string[];
@@ -32,25 +30,15 @@ export interface ProjectType {
   category: string;
 }
 
-export const industryColors = {
-  'E-commerce': 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200',
-  'EdTech': 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200',
-  'HR Tech': 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200',
-  'Fintech': 'bg-teal-100 text-teal-800 dark:bg-teal-900 dark:text-teal-200',
-  'AI & Emerging': 'bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200'
-};
-
 const allProjects: ProjectType[] = [
   {
     id: 'wella-ecommerce-platform',
     title: 'Powering Personalized Campaigns for Wella with Talon.One',
     shortDescription: 'Currently leading the digital transformation for Wella Professionals by defining functional and technical requirements, and integrating Talon.One to automate personalized promotions, campaigns, and loyalty programs across their e-commerce platform.',
-    outcomeStatement: 'Streamlined campaign execution and enabled smarter, personalized promotions for global markets.',
     description: 'This ongoing project is part of Wella Professionals’ shift toward scalable e-commerce automation. As the Technical Product Lead, I’m responsible for defining functional, technical, and system requirements, and working closely with cross-functional teams to integrate Talon.One for promotions management. The objective is to move away from manual campaign processes and build an automated, data-driven setup for handling promotions, coupons, and loyalty workflows—all aligned with Wella’s brand strategy and customer engagement goals.',
     coverImage: WellaImage,
     images: [],
     tags: ['E-commerce', 'Digital Transformation', 'Marketing Automation', 'API Integration', 'Personalization', 'Campaign Management'],
-    industry: 'E-commerce',
     role: 'Systems Consultant and Developer',
     tools: ['Talon.One', 'Jira', 'Confluence', 'Postman', 'MS Excel'],
     challenges: 'The main challenge is aligning Talon.One’s flexible campaign engine with Wella’s business use cases while maintaining simplicity for end users. The system needs to support global campaign structures, segment-based targeting, and real-time personalization without disrupting existing workflows.',
@@ -62,12 +50,10 @@ const allProjects: ProjectType[] = [
     id: 'adidas-labelling',
     title: 'Adidas International Labelling App',
     shortDescription: 'Led development of a critical labelling system for Adidas\' international markets, improving efficiency by 40%.',
-    outcomeStatement: 'Improved operational efficiency by 40% across 12+ international markets.',
     description: 'I took full ownership of developing, maintaining, and managing Adidas\' International Labelling Application, an essential backbone for ensuring every product complies with labelling laws across global markets. From building the core system to overseeing ongoing updates, I made sure the platform stayed rock-solid, scalable, and user-friendly for a global team.',
     coverImage: AdidasImage,
     images: [],
     tags: ['Java', 'SpringBoot', 'Agile Product Development', 'Technical & Business Requirements Analysis', 'Feature Prioritization & Roadmapping'],
-    industry: 'E-commerce',
     role: 'Senior Systems Engineer',
     tools: ['Java', 'SpringBoot', 'AWS', 'Jenkins', 'SQL', 'Git', 'Microservices', 'Hibernate', 'JIRA', 'Confluence', 'Agile Scrum'],
     challenges: 'The toughest part was navigating the maze of ever-changing, country-specific labelling regulations while keeping the application fast and reliable. On top of that, I had to ensure updates rolled out smoothly without disrupting the tight production timelines Adidas operates on.',
@@ -79,12 +65,10 @@ const allProjects: ProjectType[] = [
     id: 'smart-spending-dashboard',
     title: 'Smart Spending App',
     shortDescription: 'Designed and developed a comprehensive personal finance dashboard that transforms raw transactions into actionable insights.',
-    outcomeStatement: 'Improved users\' financial transparency by 40% through visual analytics and real-time tracking.',
     description: 'The Smart Spending Application is a personal finance dashboard designed to empower users with real-time insights into their spending behavior. Built using Java, Spring Boot, SQL for the backend and Angular, HTML, CSS, Bootstrap for the frontend, the application offers an intuitive, visual snapshot of monthly expenses, categorized intelligently for actionable financial decisions.',
     coverImage: SmartSpendingImage,
     images: [],
     tags: ['FinTech', 'Full-Stack Development', 'Product Strategy', 'UX Design', 'Agile Development', 'MVP Definition'],
-    industry: 'Fintech',
     role: 'Full-Stack Developer with Product Ownership',
     tools: ['Java', 'Angular', 'Spring Boot', 'SQL', 'JIRA', 'Git', 'HTML', 'CSS', 'JavaScript'],
     challenges: 'Despite the growing need for financial awareness, many users struggle to track their spending across categories, leading to budget leaks and poor financial planning. The challenge was to build an end-to-end solution that not only processes raw transactional data but presents it in a way that\'s engaging, insightful, and immediately useful, all while maintaining backend robustness and frontend clarity.',
@@ -96,12 +80,10 @@ const allProjects: ProjectType[] = [
     id: 'ats-portal',
     title: 'Advanced ATS Job Portal',
     shortDescription: 'Designed a smart job portal integrated with an ATS to simplify recruitment for both job seekers and recruiters. Enabled skill-based matching, automated application tracking, and streamlined hiring workflows.',
-    outcomeStatement: 'Delivered detailed product strategy and prototype with strong market fit potential.',
     description: 'As the product manager, I drove the vision and execution of an advanced ATS-integrated job portal designed to transform hiring—simplifying how recruiters find the best talent and how candidates navigate the job search. My role spanned from deep market research to defining the product roadmap, prioritizing features, and aligning cross-functional teams.',
     coverImage: JobPortalImage,
     images: [],
     tags: ['Product Management', 'Product Roadmapping', 'UX Design', 'MVP Scoping', 'Problem Solving'],
-    industry: 'HR Tech',
     role: 'Associate Product Manager',
     tools: ['JIRA', 'Confluence', 'Trello', 'Slack', 'Figma', 'User Story Mapping', 'Agile Scrum', 'Roadmapping', 'Backlog Prioritization', 'Stakeholder Management', 'Cross-Functional Team Coordination'],
     challenges: 'Aligning diverse stakeholder requirements, from recruiters needing efficient candidate filtering to job seekers seeking intuitive application experiences. Managing scope and priorities without formal product launch resources.',
@@ -113,12 +95,10 @@ const allProjects: ProjectType[] = [
     id: 'educational-platform',
     title: 'Personalized Education Solutions',
     shortDescription: 'Led the development of a suite of edtech products focused on upskilling and career readiness. Translated ideas into MVPs by aligning user needs with agile execution and cross-functional collaboration.',
-    outcomeStatement: 'Transformed high-level ideas into structured execution frameworks ready for development.',
     description: 'At Seekho 360, I was brought in during a high-stakes phase where the vision was big, but execution hadn\'t taken off yet. The team aimed to launch three flagship products—Unishala, PowerSchoolz, and the Seekho 360 aggregator app. Each product had a clear audience and strong potential: Unishala was built as a deeply informative blog platform for engineering aspirants and government exam students; PowerSchoolz was envisioned as an intuitive course delivery platform with a strong focus on learner engagement; and the Seekho 360 app aimed to be an all-in-one aggregator for courses ranging from UPSC prep to study abroad programs. My role was to take these early-stage ideas and turn them into actionable, structured, and scalable project blueprints.',
     coverImage: SeekhoProductsImage,
     images: [],
     tags: ['Project Management', 'Product Strategy', 'MVP Definition', 'EdTech', 'Execution Planning', 'Cross-functional Alignment'],
-    industry: 'EdTech',
     role: 'Project Manager',
     tools: ['Slack', 'Google Docs', 'Google Sheets', 'Asana', 'Figma', 'Microsoft Excel', 'Notion', 'Canva'],
     challenges: 'The biggest challenge was navigating complete ambiguity. Nothing existed in concrete form, no timelines, no prioritization, and minimal product documentation. With multiple teams moving independently and a lack of centralized visibility, the risk of misalignment and rework was high. On top of that, each product had its own unique vision, making it critical to balance ambition with practical timelines and MVP goals.',
@@ -130,12 +110,10 @@ const allProjects: ProjectType[] = [
     id: 'ai-learning',
     title: 'AI-Based Math Learning Platform',
     shortDescription: 'Led project execution for an adaptive math platform that personalizes practice paths using AI. Ensured on-time delivery and alignment with learning outcomes across multiple school deployments.',
-    outcomeStatement: 'Reduced sprint turnaround time by 30% and increased personalized question delivery by 25%.',
     description: 'During my time at Cerebry, I worked at the intersection of education and artificial intelligence, managing a platform designed to deliver adaptive math practice to learners across various geographies. As an Assistant Project Manager Intern, I played a key role in streamlining product delivery and ensuring that the AI-powered system could deliver dynamic, personalized content efficiently and accurately. My role involved coordinating across tech, AI, and academic teams, and transforming a fast-moving startup environment into a well-oiled product delivery machine.',
     coverImage: CerebryPrductImage,
     images: [],
     tags: ['EdTech', 'AI in Education', 'Personalized Learning', 'Agile Project Management', 'Product Operations', 'Cross-Team Collaboration'],
-    industry: 'AI & Emerging',
     role: 'Associate PM Intern',
     duration: '4 months',
     tools: ['Notion', 'Slack', 'Confluence', 'Google Sheets', 'Trello', 'Zoom', 'Google Drive'],
