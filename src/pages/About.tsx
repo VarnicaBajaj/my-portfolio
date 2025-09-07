@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle2 } from 'lucide-react';
 import SectionHeading from '../components/SectionHeading';
-
+import AboutImage from '../assets/images/About.png';
 const About: React.FC = () => {
   useEffect(() => {
     document.title = 'About Me | Varnica - Product & Project Manager';
@@ -74,7 +74,7 @@ const About: React.FC = () => {
             <div className="relative mb-8">
               <div className="absolute inset-0 bg-accent/20 rounded-lg transform -rotate-3"></div>
               <img
-  src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400"
+  src={AboutImage}
   alt="Varnica working"
   className="relative rounded-lg shadow-lg w-full object-cover z-10"
 />

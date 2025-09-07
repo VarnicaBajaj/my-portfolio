@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MessageCircle } from 'lucide-react';
+import whatsappIcon from '../assets/images/WhatsAppIcon.png';
 
 const WhatsAppButton: React.FC = () => {
   return (
@@ -12,9 +12,11 @@ const WhatsAppButton: React.FC = () => {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
     >
-      <div className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg">
-        <MessageCircle className="w-8 h-8 text-white" />
-      </div>
+      <img 
+        src={whatsappIcon} 
+        alt="Chat on WhatsApp"
+        className="w-14 h-14"
+      />
     </motion.a>
   );
 };
