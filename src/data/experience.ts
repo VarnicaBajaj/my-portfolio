@@ -9,7 +9,6 @@ export interface ExperienceType {
 }
 
 import infosysLogo from '../assets/images/infosys-logo-png (1).png';
-import seekhoLogo from '../assets/images/Seekho360.png';
 import perimatticLogo from '../assets/images/Perimattic.png';
 import cerebryLogo from '../assets/images/Cerebry Logo.png';
 import chapterAppsLogo from '../assets/images/Logo.png';
@@ -36,7 +35,7 @@ export const experiences: ExperienceType[] = [
   {
     id: 'seekho360',
     company: 'Seekho 360',
-    companyLogo: seekhoLogo,
+    companyLogo: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
     role: 'Project Manager',
     //period: 'Sep 2023 – Dec 2023',
     description: 'Spearheaded the planning and execution of three educational products. Coordinated across design and development teams, driving agile sprints and comprehensive product documentation.',

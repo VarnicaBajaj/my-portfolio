@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useTheme } from '../context/ThemeContext';
-import logo from '../assets/images/VBLogo.png';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -51,7 +50,9 @@ const Navbar: React.FC = () => {
       <div className="container-custom">
         <div className="flex items-center justify-between py-4">
           <Link to="/" className="relative group flex items-center">
-  <img src={logo} alt="Logo" className="h-14 w-auto" />
+  <div className="h-14 w-14 bg-accent rounded-full flex items-center justify-center">
+    <span className="text-white font-bold text-xl">VB</span>
+  </div>
   {/* Optional: You can keep the underline animation on the logo or remove it */}
   <motion.span 
     className="absolute bottom-0 left-0 w-0 h-1 bg-accent group-hover:w-full transition-all duration-300"
