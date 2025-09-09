@@ -9,7 +9,6 @@ import ExperienceCard from '../components/ExperienceCard';
 import { projects } from '../data/projects';
 import { experiences } from '../data/experience';
 import MyProfilePic from '../assets/images/ProfilePic.png';
-import toolImage from "../assets/images/Tools.jpg";
 import PMImage from '../assets/images/PMImage.png';
 import SkillsCarousel from '../components/SkillsCarousel';
 
@@ -102,7 +101,7 @@ const Home: React.FC = () => {
                 <span style={{ fontSize: "1.3em", fontWeight: "600" }}>
                   Hi, I'm Varnica,
                 </span>{" "}
-                I started my journey writing backend code at Infosys, but quickly found myself steering timelines, gathering requirements, and syncing cross-functional teams. That curiosity led me beyond the "how" into the "why", and I haven't looked back since.
+                I started my journey writing backend code at Infosys, but quickly found myself steering timelines, gathering requirements, and syncing cross-functional teams. That curiosity led me beyond the "how\" into the "why", and I haven't looked back since.
                 <br />
 
                 <div style={{ marginTop: '0.3em', marginBottom: '0.3em' }}></div>
@@ -189,12 +188,102 @@ const Home: React.FC = () => {
 
           <SkillsCarousel categories={skillCategories} />
 
-          <div className="mt-8">
-            <img
-              src={toolImage}
-              alt="Tools and Skills"
-              className="mx-auto max-w-[600px] sm:max-w-[800px] lg:max-w-[1000px]"
-            />
+          <div className="mt-12">
+            <h3 className="text-2xl font-bold text-center mb-8">Tools & Technologies I Work With</h3>
+            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 max-w-4xl mx-auto">
+              {/* Product Management Tools */}
+              <div className="flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="Jira" className="w-12 h-12 mb-2" />
+                <span className="text-sm font-medium">Jira</span>
+              </div>
+              
+              <div className="flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original.svg" alt="Confluence" className="w-12 h-12 mb-2" />
+                <span className="text-sm font-medium">Confluence</span>
+              </div>
+              
+              <div className="flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" className="w-12 h-12 mb-2" />
+                <span className="text-sm font-medium">Figma</span>
+              </div>
+              
+              <div className="flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <img src="https://mixpanel.com/wp-content/uploads/2021/07/mp-logo-mark-color.svg" alt="Mixpanel" className="w-12 h-12 mb-2" />
+                <span className="text-sm font-medium">Mixpanel</span>
+              </div>
+              
+              <div className="flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" alt="Slack" className="w-12 h-12 mb-2" />
+                <span className="text-sm font-medium">Slack</span>
+              </div>
+              
+              <div className="flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" alt="Trello" className="w-12 h-12 mb-2" />
+                <span className="text-sm font-medium">Trello</span>
+              </div>
+              
+              {/* Development Tools */}
+              <div className="flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" className="w-12 h-12 mb-2" />
+                <span className="text-sm font-medium">Java</span>
+              </div>
+              
+              <div className="flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" className="w-12 h-12 mb-2" />
+                <span className="text-sm font-medium">Spring Boot</span>
+              </div>
+              
+              <div className="flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" className="w-12 h-12 mb-2" />
+                <span className="text-sm font-medium">SQL</span>
+              </div>
+              
+              <div className="flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS" className="w-12 h-12 mb-2" />
+                <span className="text-sm font-medium">AWS</span>
+              </div>
+              
+              <div className="flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" className="w-12 h-12 mb-2" />
+                <span className="text-sm font-medium">Git</span>
+              </div>
+              
+              <div className="flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" className="w-12 h-12 mb-2" />
+                <span className="text-sm font-medium">Jenkins</span>
+              </div>
+              
+              {/* Design & Analytics */}
+              <div className="flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva" className="w-12 h-12 mb-2" />
+                <span className="text-sm font-medium">Canva</span>
+              </div>
+              
+              <div className="flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <img src="https://www.vectorlogo.zone/logos/google_analytics/google_analytics-icon.svg" alt="Google Analytics" className="w-12 h-12 mb-2" />
+                <span className="text-sm font-medium">Analytics</span>
+              </div>
+              
+              <div className="flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg" alt="Notion" className="w-12 h-12 mb-2" />
+                <span className="text-sm font-medium">Notion</span>
+              </div>
+              
+              <div className="flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <img src="https://www.vectorlogo.zone/logos/microsoft_powerpoint/microsoft_powerpoint-icon.svg" alt="PowerPoint" className="w-12 h-12 mb-2" />
+                <span className="text-sm font-medium">PowerPoint</span>
+              </div>
+              
+              <div className="flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <img src="https://www.vectorlogo.zone/logos/microsoft_office_excel/microsoft_office_excel-icon.svg" alt="Excel" className="w-12 h-12 mb-2" />
+                <span className="text-sm font-medium">Excel</span>
+              </div>
+              
+              <div className="flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" className="w-12 h-12 mb-2" />
+                <span className="text-sm font-medium">Postman</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -203,41 +292,92 @@ const Home: React.FC = () => {
       <section className="py-20">
         <div className="container-custom">
           <SectionHeading
-            title="Impactful Projects"
-            subtitle="A curated showcase of high-impact products I've led, blending strategic thinking, user empathy, and execution excellence."
+            title="Featured Work"
+            subtitle="Highlighting my most impactful projects that demonstrate strategic product thinking, cross-functional leadership, and measurable business outcomes."
           />
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {projects.slice(0, 2).map((project, index) => (
-              <ProjectCard key={project.id} project={project} index={index} />
-            ))}
+          {/* Current/Recent Projects */}
+          <div className="mb-16">
+            <h3 className="text-xl font-bold mb-6 text-accent">🚀 Current & Recent Projects</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {projects.filter(p => ['wella-ecommerce-platform', 'adidas-labelling'].includes(p.id)).map((project, index) => (
+                <ProjectCard key={project.id} project={project} index={index} />
+              ))}
+            </div>
           </div>
           
-          <div className="flex justify-center mt-12">
+          {/* Key Product Achievements */}
+          <div className="mb-16">
+            <h3 className="text-xl font-bold mb-6 text-accent">🎯 Key Product Achievements</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {projects.filter(p => ['smart-spending-dashboard', 'ats-portal'].includes(p.id)).map((project, index) => (
+                <ProjectCard key={project.id} project={project} index={index} />
+              ))}
+            </div>
+          </div>
+          
+          {/* Early Career Impact */}
+          <div className="mb-12">
+            <h3 className="text-xl font-bold mb-6 text-accent">📈 Early Career Impact</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {projects.filter(p => ['educational-platform', 'ai-learning'].includes(p.id)).map((project, index) => (
+                <ProjectCard key={project.id} project={project} index={index} />
+              ))}
+            </div>
+          </div>
+          
+          <div className="text-center">
+            <p className="text-muted-foreground mb-6">
+              Each project represents a unique challenge where I applied product thinking, stakeholder alignment, and execution excellence to drive meaningful outcomes.
+            </p>
             <LinkButton to="/projects" variant="outline">
-              View All Projects <ArrowRight className="ml-2" size={18} />
+              Explore All Projects & Case Studies <ArrowRight className="ml-2" size={18} />
             </LinkButton>
           </div>
         </div>
       </section>
 
+      {/* Project Stats Section */}
+      <section className="py-16 bg-secondary/20">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+            <div className="bg-card p-6 rounded-lg shadow-sm">
+              <h4 className="text-3xl font-bold text-accent mb-2">6+</h4>
+              <p className="text-muted-foreground">Projects Led</p>
+            </div>
+            <div className="bg-card p-6 rounded-lg shadow-sm">
+              <h4 className="text-3xl font-bold text-accent mb-2">3+</h4>
+              <p className="text-muted-foreground">Years Experience</p>
+            </div>
+            <div className="bg-card p-6 rounded-lg shadow-sm">
+              <h4 className="text-3xl font-bold text-accent mb-2">40%</h4>
+              <p className="text-muted-foreground">Avg. Efficiency Gain</p>
+            </div>
+            <div className="bg-card p-6 rounded-lg shadow-sm">
+              <h4 className="text-3xl font-bold text-accent mb-2">12+</h4>
+              <p className="text-muted-foreground">Markets Impacted</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Experience Preview Section */}
-      <section className="py-20 bg-secondary/30">
+      <section className="py-20">
         <div className="container-custom">
           <SectionHeading
-            title="Professional Experience"
-            subtitle="A glimpse of my journey and the companies I've worked with."
+            title="Professional Journey"
+            subtitle="From engineering to product leadership - a journey of continuous learning and impact creation."
           />
           
           <div className="space-y-6">
             {experiences.slice(0, 2).map((experience, index) => (
-              <ExperienceCard key={experience.id} experience={experience} index={index} />
+              <ProjectCard key={project.id} project={project} index={index} />
             ))}
           </div>
           
           <div className="flex justify-center mt-12">
             <LinkButton to="/experience" variant="outline">
-              Explore Roles I've Owned<ArrowRight className="ml-2" size={18} />
+              View Complete Experience <ArrowRight className="ml-2" size={18} />
             </LinkButton>
           </div>
         </div>
