@@ -371,7 +371,7 @@ const Home: React.FC = () => {
           
           <div className="space-y-6">
             {experiences.slice(0, 2).map((experience, index) => (
-              <ProjectCard key={project.id} project={project} index={index} />
+              <ExperienceCard key={experience.id} experience={experience} index={index} />
             ))}
           </div>
           
